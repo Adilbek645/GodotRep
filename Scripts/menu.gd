@@ -1,8 +1,10 @@
 extends Node2D
 
 func _process(delta: float) -> void:
-	pass
-
+	if Input.is_action_just_pressed("Start"):
+		get_tree().change_scene_to_file("res://node_2d.tscn")
+	if Input.is_action_just_pressed("Exit"):
+		get_tree().quit()
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()
