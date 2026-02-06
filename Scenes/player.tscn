@@ -293,7 +293,5 @@ script = ExtResource("1_dcrh0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tuahe")
-animation = &"Idle_down"
+animation = &"Down"
 autoplay = "Idle_down"
-frame = 3
-frame_progress = 0.851827
