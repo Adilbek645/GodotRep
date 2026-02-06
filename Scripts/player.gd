@@ -12,3 +12,4 @@ var speed = 100
 var idel_dir = DOWN
 
 func _physics_process(delta: float) -> void:
+	pass
