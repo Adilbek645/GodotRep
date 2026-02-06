@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc5t3dk2ne4dc"]
+
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_eifyx"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_eifyx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, 322)
+
+[node name="Start" type="Button" parent="."]
+offset_left = 322.0
+offset_top = 275.0
+offset_right = 487.0
+offset_bottom = 322.0
+theme_override_font_sizes/font_size = 24
+text = "START"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 321.0
+offset_top = 350.0
+offset_right = 488.0
+offset_bottom = 398.0
+theme_override_font_sizes/font_size = 24
+text = "EXIT"
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
