@@ -12,6 +12,7 @@ var speed = 100
 var idle_dir = DOWN
 
 func _physics_process(delta: float) -> void:
+<<<<<<< HEAD
 	if Input.is_action_pressed("up"):
 		up_move()
 	elif Input.is_action_pressed("down"):
@@ -60,3 +61,6 @@ func idle():
 			RIGHT:
 				anim.flip_h = false
 				anim.play("Idle_front")
+=======
+	pass
+>>>>>>> 2ae81e9f8c858d65d588889fb24704a94a3cc5ec
