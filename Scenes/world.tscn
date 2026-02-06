@@ -1,6 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://cx458ef6mju63"]
+[gd_scene load_steps=9 format=3 uid="uid://crkx162gpr0mo"]
 
-[ext_resource type="PackedScene" uid="uid://b3bub5pfpjj0e" path="res://Scenes/player.tscn" id="1_etlpl"]
+[ext_resource type="PackedScene" uid="uid://x6553ex2n8co" path="res://Scenes/player.tscn" id="1_etlpl"]
 [ext_resource type="Texture2D" uid="uid://humfxrmahxoe" path="res://assets/explanations.png" id="1_xsnvh"]
 [ext_resource type="Texture2D" uid="uid://dtvhl6664akkh" path="res://assets/free_sample_crops.png" id="2_v08fp"]
 [ext_resource type="Texture2D" uid="uid://kxfkqf3vehkr" path="res://assets/free_sample_tileset.png" id="3_db5bb"]
@@ -9855,8 +9855,17 @@ sources/2 = SubResource("TileSetAtlasSource_usb12")
 
 [node name="player" parent="." instance=ExtResource("1_etlpl")]
 z_index = 1
-position = Vector2(100, 0)
-scale = Vector2(3, 3)
+position = Vector2(100, 25)
+scale = Vector2(2, 2)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-0.666656, 12)
+scale = Vector2(0.333333, 0.333333)
+zoom = Vector2(2.5, 2.5)
+limit_left = 0
+limit_top = 0
+limit_right = 1280
+limit_bottom = 650
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_61cjt")
